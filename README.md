@@ -63,7 +63,7 @@ float searchForNote(float freq) {
 ```
 # Electronic filter
 
-The project haves also an electronic board who contains a circuit with:
+The project has also an electronic board who contains a circuit with:
 * Amplifier, for make the microphone signal stronger
 * Band pass filter between 100hz and 1Khz
 * Clamper circuit, for elevate the signal to the positive field
