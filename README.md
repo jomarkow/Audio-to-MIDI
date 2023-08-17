@@ -2,7 +2,27 @@
 
 #### Convert your sound into an editable music document.
 
+### Index:
+
+* [Description](#description)<br>
+* [Software](#software)<br>
+* [Electronic Filter](#filter)<br>
+* [Simulation](#simulation)<br>
+* [BOM](#bom)<br>
+* [Colaborate](#colab)<br>
+
+<a name="description"></a>
+# Description
+
+The idea of this project originates from an interest on music and trying to find a way to make it easier to record and edit it at the moment. Since me and my teammates enjoy both music and electronics, we decided to go this way and create this project.
+
 The objective of this project is to make the user able to convert real sounds, whether of instruments or voice, into a MIDI format in real time. With MIDI you can put these notes into a music editor, like Reaper, and saw them the while you are playing.
+
+This was made in team with: 
+[Joaquin Pimpignano](https://github.com/JoaquinPimpignano),
+[Iris Martinez](https://github.com/IrisMartinez05),
+[Juan Cruz Martinez]() and
+[Violeta Martinez]().
 
 #### Made with:
 
@@ -10,8 +30,8 @@ The objective of this project is to make the user able to convert real sounds, w
 [![Teensy](https://img.shields.io/badge/Teensy_4.0-206922?style=for-the-badge)](https://www.pjrc.com/store/teensy40.html)
 [![Kicad](https://img.shields.io/badge/Kicad-1a2dc7?style=for-the-badge&logo=kicad)](https://www.kicad.org/)
 
+<a name="software"></a>
 # Software
-
 
 The most important part of the project. We decide to do it on a teensy because of his memory and fast processment capacity, making posible to create a Fourier Transform for analize the signal and discover the notes in real time.
 
@@ -61,6 +81,8 @@ float searchForNote(float freq) {
   }
 }
 ```
+
+<a name="filter"></a>
 # Electronic filter
 
 The project has also an electronic board who contains a circuit with:
@@ -70,6 +92,11 @@ The project has also an electronic board who contains a circuit with:
 
 [![69ea6844-90a0-43a4-9217-2764cb34e035.jpg](https://i.postimg.cc/MTbgxwq4/69ea6844-90a0-43a4-9217-2764cb34e035.jpg)](https://postimg.cc/Kkj0rdKr)
 
+Board designed on kicad 7.0:
+
+[![Whats-App-Image-2023-08-16-at-16-10-43.jpg](https://i.postimg.cc/QCvqd6bW/Whats-App-Image-2023-08-16-at-16-10-43.jpg)](https://postimg.cc/tnt6rN8X)
+
+<a name="simulation"></a>
 # Simulation:
 
 We simulate the circuit on Proteus, here the results:
@@ -78,7 +105,9 @@ We simulate the circuit on Proteus, here the results:
 
 
 As you could see, as more amplitude on the input, the filter gets better on cutting the frequencies out of our range, but in general, it gives us a good result.
+On "simulation" folder you will find the proteus file for simulate it yourself.
 
+<a name="bom"></a>
 # BOM
 
 Component|Quantity|
@@ -103,13 +132,14 @@ Component|Quantity|
 |L7806|1|
 |ld1117|1|
 
-
-
+<a name="colab"></a>
 # Colaborate
+
+We see in this project a great potencial for implementing diferent technologies in future versions, such as an IA for better sound recognition or a dedicated software platform for colaborative musical pieces. In any case we are open to listen your ideas.
 
 If you want to colaborate on this project, you are invited to create a Pull Request with a descriptive text of the changes/updates.
 
 You can also contact me: 
 [jomarkow@gmail.com](mailto:jomarkow@gmail.com)
 
-I hope you liked the project, if so, I invite you to leave a star ⭐, thanks for read :).
+We hope you liked the project, if so, I invite you to leave a star ⭐, thanks for read :).
